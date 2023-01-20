@@ -1,4 +1,5 @@
 const gal = document.querySelectorAll('.panel');
+const temp = document.getElementById('temp');
  
 function handle(){
     this.classList.toggle('open');
