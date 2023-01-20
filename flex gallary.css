@@ -44,9 +44,11 @@ p{
 .p3{ background-image: url(/autumn.png);}
 .p4{ background-image: url(/winter.png);}
 
-.open{
+.panel.open{
     flex: 3;
 }
-.panel:hover{
-    flex: 2;
-}
+
+.panel > *:first-child { transform: translateY(-100%); }
+.panel.open-active > *:first-child { transform: translateY(0); }
+.panel > *:last-child { transform: translateY(100%); }
+.panel.open-active > *:last-child { transform: translateY(0); }
